@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ethane",
+  "version": "2.0",
+  "description": "Ethane clarnet!",
+  "authors": [
+    "szypko",
+    "groszus"
+  ],
+  "environment": "*",
+  "icon": "assets/ethane/icon.png",
+  "entrypoints": {
+    "main": [
+      "lol.ethane.Ethane"
+    ]
+  },
+  "depends": {
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "ethane.mixins.json"
+  ],
+  "accessWidener": "ethane.accesswidener",
+  "jars": [
+    {
+      "file": "META-INF/jars/bcpkix-jdk18on-1.78.1.jar"
+    },
+    {
+      "file": "META-INF/jars/bcprov-jdk18on-1.78.1.jar"
+    },
+    {
+      "file": "META-INF/jars/bcutil-jdk18on-1.78.1.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-api-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-context-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-core-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-netty-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-protobuf-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-protobuf-lite-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grpc-stub-1.60.0.jar"
+    },
+    {
+      "file": "META-INF/jars/luaj-jse-3.0.1.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-codec-http2-4.1.100.Final.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-handler-proxy-4.1.100.Final.jar"
+    },
+    {
+      "file": "META-INF/jars/perfmark-api-0.26.0.jar"
+    },
+    {
+      "file": "META-INF/jars/protobuf-java-3.25.1.jar"
+    }
+  ]
+}

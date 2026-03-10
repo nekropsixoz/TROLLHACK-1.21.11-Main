@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package command_service;
+
+option java_multiple_files = true;
+option java_package = "lol.ethane.proto";
+option java_outer_classname = "CommanderProto";
+
+message CommandRequest {
+  string command_id = 1;
+  bytes payload = 2;
+  bytes nonce = 3;
+}
+
+message CommandResponse {
+  bool success = 1;
+  bytes payload = 2;
+  bytes nonce = 3;
+}
+
+service Commander {
+  rpc SecureStream (stream CommandRequest) returns (stream CommandResponse);
+}
